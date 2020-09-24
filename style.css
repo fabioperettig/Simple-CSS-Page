@@ -174,73 +174,27 @@ a:hover{
     background-color: var(--color-pltt03); 
 }
 
-.ptButtonMin{
+.math {
+    background: none;
+    color: #d55f8f;
+    border: none;
+    outline: none;
+    font-family: 'roboto';
+    font-size: 1rem;
+}
+
+.math:hover{
+  font-size: 0;
     
-    margin-right: .25rem;
-    display: flex;
-    background-color: var(--color-pltt02);
-    border: none;
-    padding: .4rem 1rem;
-    text-align: center;
+}
+
+.math:hover:after{
+    content: attr(data-hover);
+    font-size: 1rem;
+    color: #d55f8f;
     font-weight: bolder;
-    color: var(--color-pltt03); 
-    font-size: .75rem;
-    border-radius: .3rem;
-    cursor: pointer;
-    transition: ease;
-    transition-duration: .4s;
-    outline: none;
+      
 }
-
-.ptButtonMin:hover{
-    color: var(--color-pltt02);
-    background-color: var(--color-pltt03); 
-}
-
-.enButtonMin{
-    margin-right: .25rem;
-    display: flex;
-    background-color: var(--color-pltt02);
-    border: none;
-    padding: .4rem 1rem;
-    text-align: center;
-    font-weight: bolder;
-    color: var(--color-pltt03); 
-    font-size: .75rem;
-    border-radius: .3rem;
-    cursor: pointer;
-    transition: ease;
-    transition-duration: .4s;
-    outline: none;
-}
-
-.enButtonMin:hover{
-    color: var(--color-pltt02);
-    background-color: var(--color-pltt03); 
-}
-
-.spButtonMin{
-    margin-right: .25rem;
-    display: flex;
-    background-color: var(--color-pltt02);
-    border: none;
-    padding: .4rem 1rem;
-    text-align: center;
-    font-weight: bolder;
-    color: var(--color-pltt03); 
-    font-size: .75rem;
-    border-radius: .3rem;
-    cursor: pointer;
-    transition: ease;
-    transition-duration: .4s;
-    outline: none;
-}
-
-.spButtonMin:hover{
-    color: var(--color-pltt02);
-    background-color: var(--color-pltt03); 
-}
-
 
 @media only screen and (min-width: 600px) {
     .screenButtons{
@@ -256,21 +210,4 @@ a:hover{
         display: flex;
         opacity: 0%;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .screenButtons{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        
-        opacity: 0%;
-    }
-    .mobileButtons{
-        position: absolute;
-        display: flex;
-        opacity: 100%;
-    }
-
 }
