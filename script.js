@@ -1,48 +1,36 @@
-const btnscrollToEnglishMobile = document.querySelector('.enButtonMin')
-    btnscrollToEnglishMobile.addEventListener('click', function (){
-        window.scrollTo({
-            top: 1680,
-            behavior: 'smooth'
-          });
-    })
+var my_elementpt = document.getElementById("portuguese");
+var buttonpt = document.getElementById("ptButton")
 
-    const btnscrollToPortugueseMobile = document.querySelector('.ptButtonMin')
-    btnscrollToPortugueseMobile.addEventListener('click', function (){
-        window.scrollTo({
-            top: 150,
-            behavior: 'smooth'
-          });
-    })
+    buttonpt.onclick=function(){
 
-    const btnscrollToSpanishMobile = document.querySelector('.spButtonMin')
-    btnscrollToSpanishMobile.addEventListener('click', function (){
-        window.scrollTo({
-            top: 2395,
-            behavior: 'smooth'
-          });
-    })
+    my_elementpt.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+});
+    }
 
 
-    const btnscrollToEnglishScreen = document.querySelector('.enButtonMax')
-    btnscrollToEnglishScreen.addEventListener('click', function (){
-        window.scrollTo({
-            top: 600,
-            behavior: 'smooth'
-          });
-    })
+var my_elementsp = document.getElementById("Spanish");
+var buttonsp = document.getElementById("spButton")
+        
+    buttonsp.onclick=function(){
+        
+    my_elementsp.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+});
+    }
 
-    const btnscrollToPortugueseScreen = document.querySelector('.ptButtonMax')
-    btnscrollToPortugueseScreen.addEventListener('click', function (){
-        window.scrollTo({
-            top: 150,
-            behavior: 'smooth'
-          });
-    })
-
-    const btnscrollToSpanishScreen = document.querySelector('.spButtonMax')
-    btnscrollToSpanishScreen.addEventListener('click', function (){
-        window.scrollTo({
-            top: 1100,
-            behavior: 'smooth'
-          });
-    })
+var my_elementen = document.getElementById("english");
+var buttonen = document.getElementById("enButton")
+        
+    buttonen.onclick=function(){
+        
+    my_elementen.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+});
+    }
