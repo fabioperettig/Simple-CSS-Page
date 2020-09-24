@@ -8,11 +8,20 @@
     --color-pltt05: #262931;
 }
 
+/*.flaticon-herbs{
+    display: inline;
+    position: relative;
+    top: -2.3rem;
+    left: 11rem;
+    color: var(--color-pltt02);
+} */
 
 
 h1 {
-    display: inline;
-    text-align: left;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: var(--color-pltt02);
 }
 
@@ -43,7 +52,8 @@ body::-webkit-scrollbar-thumb {
     background: var(--color-pltt02);
 }
 
-button{
+
+.like{
     margin: auto;
     display: block;
     margin-top: 2rem;
@@ -58,10 +68,209 @@ button{
     cursor: pointer;
     transition: ease;
     transition-duration: .4s;
+    outline: none;
 }
 
-button:hover {
+
+.like:hover {
     background-color: var(--color-pltt03);
     color: var(--color-pltt02);
-    padding: 1rem 4rem;
+    padding: 1rem 4rem;;
+}
+
+a{
+    text-decoration: none;
+    color:  #d55f8f;
+    transition: all .5s ease;
+    outline: none;
+}
+
+a:hover{
+    color: #d5cccc;
+    font-size: 1.1rem;
+}
+
+.screenButtons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.mobileButtons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5.5rem;
+    margin-top: -1.75rem;
+}
+
+
+.ptButtonMax{
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.ptButtonMax:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+.enButtonMax{
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.enButtonMax:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+.spButtonMax{
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.spButtonMax:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+.ptButtonMin{
+    
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.ptButtonMin:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+.enButtonMin{
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.enButtonMin:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+.spButtonMin{
+    margin-right: .25rem;
+    display: flex;
+    background-color: var(--color-pltt02);
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--color-pltt03); 
+    font-size: .75rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .4s;
+    outline: none;
+}
+
+.spButtonMin:hover{
+    color: var(--color-pltt02);
+    background-color: var(--color-pltt03); 
+}
+
+
+@media only screen and (min-width: 600px) {
+    .screenButtons{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+        opacity: 100%;
+    }
+    .mobileButtons{
+        position: absolute;
+        display: flex;
+        opacity: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .screenButtons{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
+        opacity: 0%;
+    }
+    .mobileButtons{
+        position: absolute;
+        display: flex;
+        opacity: 100%;
+    }
+
 }
