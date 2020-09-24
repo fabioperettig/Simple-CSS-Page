@@ -1,7 +1,7 @@
 const btnscrollToEnglishMobile = document.querySelector('.enButtonMin')
     btnscrollToEnglishMobile.addEventListener('click', function (){
         window.scrollTo({
-            top: 1320,
+            top: 1680,
             behavior: 'smooth'
           });
     })
