@@ -75,7 +75,8 @@ body::-webkit-scrollbar-thumb {
 .like:hover {
     background-color: var(--color-pltt03);
     color: var(--color-pltt02);
-    padding: 1rem 4rem;;
+    padding: 1rem 2.75rem;
+    font-size: 1.05rem;
 }
 
 a{
